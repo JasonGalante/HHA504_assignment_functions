@@ -12,3 +12,7 @@
 
 ## GitHub
 ![GIT_scheduler_1](https://github.com/user-attachments/assets/e9ba80ed-2f2f-45ca-b567-bdba0021ca83)
+
+
+## These serverless functions are useful for running small batches of code directly with the deployment so that additional servers are not required.
+## These are useful for basic static functions you may need to run on a regular basis, but are not well suited for dynamic code or applications that rely on dynamic databases for dataa.
