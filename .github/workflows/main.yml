@@ -1,0 +1,18 @@
+name: Print "Carpe Diem!" Daily
+
+# Trigger the workflow on a schedule
+on:
+  schedule:
+    - cron: '0 6 * * *'  # This cron expression runs the workflow every day at 6 AM UTC
+
+jobs:
+  print-message:
+    runs-on: ubuntu-latest  # This specifies the environment where the script will run
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3  # Checkout the repository
+
+      - name: Run script to print "Carpe Diem!"
+        run: |
+          echo "Carpe Diem!"  # This command prints "Carpe Diem!" to the log
